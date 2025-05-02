@@ -1,0 +1,52 @@
+---
+
+## 🔹 1. **Workspace (Working Directory)**
+
+* **What it is:** Your local project folder where you add, edit, and delete files.
+* **Location:** Your machine.
+* **Role:** It holds the actual files you're working on — **untracked or modified** until added.
+* **Example Command:** `git status` – shows changes in the workspace.
+
+---
+
+## 🔹 2. **Staging Area (Index)**
+
+* **What it is:** A prep zone before committing changes.
+* **Location:** A hidden file (`.git/index`) inside your repo folder.
+* **Role:** Temporarily stores **what you plan to commit**.
+* **Example Command:**
+
+  * `git add file.txt` – adds a file to staging
+  * `git reset file.txt` – removes it from staging
+
+---
+
+## 🔹 3. **Local Repository**
+
+* **What it is:** The Git database stored in your `.git` folder.
+* **Location:** Your machine (offline Git history).
+* **Role:** Tracks **commits, branches, and tags** – the full version history.
+* **Example Command:**
+
+  * `git commit -m "msg"` – commits staged changes
+  * `git log` – shows commit history
+
+---
+
+## 🔹 4. **Remote Repository**
+
+* **What it is:** A **hosted version of your Git repo** (like GitHub, GitLab, Bitbucket).
+* **Location:** Remote server (e.g., `github.com`)
+* **Role:** Enables **collaboration**, **backup**, and **deployment**.
+* **Example Commands:**
+
+  * `git push origin main` – send commits to remote
+  * `git pull origin main` – get and merge latest from remote
+
+---
+
+### 🔁 Typical Git Workflow:
+
+```
+[Workspace] → git add → [Staging Area] → git commit → [Local Repo] → git push → [Remote Repo]
+```
